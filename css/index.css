@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.sectionCarousel {
+    height: 60vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover !important;
+}
+
+.btnUp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 50px;
+    height: 50px;
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.btnUp:active {
+    transform: scale(0.5);
+}
+
+.btnUp:hover {
+    background-color: #3333333d;
+}
+
+.btnUp i {
+    font-size: 20px;
+    color: #333;
+}
+
+.sectionInfo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 10% 50px 10%;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1037%26quot%3b)' fill='none'%3e%3cpath d='M18.951%2c64.711C36.517%2c65.487%2c55.274%2c60.225%2c64.039%2c44.983C72.785%2c29.774%2c67.781%2c10.997%2c58.345%2c-3.794C49.684%2c-17.37%2c35.053%2c-25.496%2c18.951%2c-25.692C2.478%2c-25.893%2c-13.904%2c-19.041%2c-22.143%2c-4.775C-30.384%2c9.493%2c-28.117%2c27.101%2c-19.73%2c41.283C-11.506%2c55.189%2c2.811%2c63.998%2c18.951%2c64.711' fill='rgba(11%2c 211%2c 101%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M78.587%2c167.644C110.056%2c166.417%2c137.076%2c148.678%2c154.119%2c122.195C172.974%2c92.896%2c187.568%2c55.896%2c169.781%2c25.936C152.216%2c-3.65%2c112.988%2c-5.654%2c78.587%2c-5.029C45.652%2c-4.431%2c10.86%2c1.499%2c-7.044%2c29.148C-26.34%2c58.947%2c-26.559%2c98.318%2c-7.889%2c128.514C9.944%2c157.357%2c44.702%2c168.966%2c78.587%2c167.644' fill='rgba(11%2c 211%2c 101%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M-19.508252808328415 110.85995688063085L171.2665591272936 87.62028730382377 72.5186367421581-48.29456775116739z' fill='rgba(11%2c 211%2c 101%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1427.493%2c208.639C1472.085%2c211.855%2c1521.032%2c205.02%2c1545.776%2c167.784C1572.714%2c127.246%2c1569.556%2c73.675%2c1545.173%2c31.551C1520.837%2c-10.492%2c1475.936%2c-40.18%2c1427.493%2c-36.563C1383.521%2c-33.28%2c1356.05%2c7.457%2c1336.764%2c47.11C1320.276%2c81.009%2c1317.022%2c119.749%2c1335.483%2c152.615C1354.331%2c186.17%2c1389.107%2c205.87%2c1427.493%2c208.639' fill='rgba(11%2c 211%2c 101%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1467.0660536627245 158.57803347268643L1484.6268354916901-8.501644949183486 1317.5471570698203-26.062426778149188 1299.9863752408546 141.01725164372073z' fill='rgba(11%2c 211%2c 101%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1386.578%2c151.383C1417.194%2c152.001%2c1437.236%2c123.185%2c1452.559%2c96.672C1467.898%2c70.131%2c1482.289%2c38.716%2c1467.075%2c12.103C1451.79%2c-14.634%2c1417.268%2c-21.32%2c1386.578%2c-18.743C1360.355%2c-16.541%2c1339.122%2c0.803%2c1326.526%2c23.907C1314.52%2c45.929%2c1314.369%2c71.407%2c1325.058%2c94.097C1337.857%2c121.266%2c1356.551%2c150.776%2c1386.578%2c151.383' fill='rgba(11%2c 211%2c 101%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M-56.84 430.18 a39.02 39.02 0 1 0 78.04 0 a39.02 39.02 0 1 0 -78.04 0z' fill='rgba(11%2c 211%2c 101%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M25.311%2c533.392C45.83%2c533.275%2c62.096%2c518.242%2c72.383%2c500.488C82.704%2c482.676%2c87.891%2c460.951%2c77.626%2c443.107C67.339%2c425.225%2c45.922%2c417.783%2c25.311%2c418.662C6.242%2c419.475%2c-10.199%2c430.771%2c-19.811%2c447.26C-29.499%2c463.881%2c-31.629%2c483.99%2c-22.702%2c501.031C-13.103%2c519.355%2c4.625%2c533.51%2c25.311%2c533.392' fill='rgba(11%2c 211%2c 101%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M180.80208468823614 461.027196045725L29.80468490997609 387.38084338516-43.841667750588925 538.37824316342 107.15573202767112 612.024595823985z' fill='rgba(11%2c 211%2c 101%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1309.4606857289193 560.1694021608578L1499.8008535777224 533.6037925423943 1398.6959296881782 399.43302685444917z' fill='rgba(11%2c 211%2c 101%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1300.9339463372753 606.5780334726865L1468.0136247591452 589.0172516437207 1450.4528429301795 421.9375732218508 1283.3731645083096 439.49835505081654z' fill='rgba(11%2c 211%2c 101%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1472.3207339944186 405.9098875068984L1304.5509721556502 414.70232815571296 1313.3434128044648 582.4720899944814 1481.1131746432332 573.6796493456668z' fill='rgba(11%2c 211%2c 101%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1037'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.infoCont {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.divTittle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.divTittle h1 {
+    font-size: 4rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.divInfo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.divInfo p {
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sectionMain {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10%;
+}
+
+.contNavBar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 1%;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-radius: 10px;
+}
+
+.contLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contLogo img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.contLogo h1 {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+}
+
+.contMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contMenu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.contMenu ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnConsulta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+
+}
+
+#filtrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.597);
+    padding: 0 20px;
+}
+
+.modal-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-title {
+    font-size: 2rem !important;
+}
+
+.divModalCont1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20%;
+}
+
+.divB1Content1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.divB1Content1 label,
+.divB1Content2 label,
+.divB2Content1 label,
+.divB2Content2 label {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+
+}
+
+.divB1Content2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+}
+
+.divTitleB1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.divTitleB1 h2 {
+    font-size: 1.8rem !important;
+    color: #333;
+    margin-bottom: 20px !important;
+}
+
+.divInputB1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#namePet,
+#typePet,
+#nameOwner,
+#phoneOwner,
+#date,
+#hour {
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    outline: none;
+}
+
+.inputOwner label {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.divModalCont2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.divTittleB2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.divTittleB2 h2 {
+    font-size: 1.8rem !important;
+    color: #333;
+    margin-bottom: 20px !important;
+}
+
+.divB2Content1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20%;
+}
+
+.divInputB2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.inputHora {
+    width: 100%;
+    display: flex;
+    align-items: end;
+}
+
+.divB2Content2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divTextArea {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#description {
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    outline: none;
+}
