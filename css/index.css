@@ -209,7 +209,7 @@ nav {
 
 }
 
-#filtrar {
+.styleFiltro {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -429,10 +429,9 @@ body.swal2-shown>[aria-hidden='true'] {
 }
 
 .card-img {
-    height: 45%;
+    height: 250px;
     width: 100%;
     border-radius: 0.5rem;
-    transition: 0.3s ease;
 }
 
 .card-img img {
@@ -491,11 +490,6 @@ body.swal2-shown>[aria-hidden='true'] {
 }
 
 /*Hover*/
-.card-img:hover {
-    transform: scale(1.1);
-    box-shadow: rgba(46, 143, 160, 0.889) 0px 7px 26px -5px,
-        rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
-}
 
 .card-button:hover {
     border: 1px solid #2d8cf0;

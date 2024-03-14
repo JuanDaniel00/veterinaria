@@ -90,16 +90,16 @@ function pintarCards() {
                 img = './img/gato.gif';
                 break;
             case 'Ave':
-                img = './img/ave.jpg';
+                img = './img/ave.gif';
                 break;
             case 'Reptil':
-                img = './img/reptil.jpg';
+                img = './img/reptil.gif';
                 break;
             case 'Roedor':
-                img = './img/roedor.jpg';
+                img = './img/roedor.gif';
                 break;
             case 'Otro':
-                img = './img/otro.jpg';
+                img = './img/otro.gif';
                 break;
         }
 
@@ -227,10 +227,9 @@ function pintarCards() {
         btnDeleteButton.appendChild(deleteIcon);
 
         const select = document.createElement('select');
-        select.classList.add('selectCard');
-        select.setAttribute('name', 'Filtrar');
-        select.setAttribute('id', 'filtrar');
-
+        select.classList.add('selectCard', 'styleFiltro');
+        select.setAttribute('name', 'FiltroCards');
+        select.addEventListener('change', filtrarCards);
 
         const option1 = document.createElement('option');
         option1.setAttribute('value', 'Abierta');
@@ -263,6 +262,7 @@ function limpiarFormulario() {
     document.getElementById('description').value = '';
 }
 
+
 function filtrarCards() {
     let valor = document.getElementById('filtrar').value;
     let cards = document.querySelectorAll('.card');
@@ -277,8 +277,7 @@ function filtrarCards() {
             card.style.display = 'none';
         }
     })
-
-
 }
 
 document.getElementById('filtrar').addEventListener('change', filtrarCards);
+
